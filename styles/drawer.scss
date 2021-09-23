@@ -1,0 +1,114 @@
+.right-drawer-container {
+    width: 330px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 2000;
+    transition: left 0.2s, right 0.2s;
+
+    display: block;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding-left: 1px;
+    padding-right: 0px;
+    overflow-x: hidden;
+
+    &.left {
+        
+        top: 0px;
+        &.on {
+            left: 0px;
+        }
+        &.off {
+            left: -330px;
+        }
+    }
+    &.right {
+        top: 0px;
+        &.on {
+            right: 0px;
+        }
+        &.off {
+            right: -330px;
+        }
+    }
+}
+
+@media (max-width: 329.98px) {
+    .right-drawer-container {
+        width: 100vw;
+        &.left {
+            &.on {
+                left: 0px;
+            }
+            &.off {
+                left: -100vw;
+            }
+        }
+        &.right {
+            &.on {
+                right: 0px;
+            }
+            &.off {
+                right: -100vw;
+            }
+        }
+    }
+}
+
+.pic1 {
+    height: 160px;
+    width: 300px;
+}
+.pic2 {
+    width: 300px;
+    height: 30px;
+}
+.pic3 {
+    width: 300px;
+    height: 110px;
+}
+.pic4 {
+
+    width: 300px;
+    height: 180px;
+}
+ 
+.manual-post {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-post-content {
+    background-color: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.small {
+    width: 300px;
+    height: 300px;
+}
+
+.dialog {
+    box-shadow: 0 8px 6px -6px black;
+    position: static;
+    left: 20%;
+    top: 10%;
+  }
+  
+  .image {
+    width: 1000px;
+    height: 600px;
+  }
+  
